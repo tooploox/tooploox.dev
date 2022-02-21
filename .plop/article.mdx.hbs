@@ -1,0 +1,17 @@
+import { BlogPost } from "/src/providers/BlogPost";
+
+export const meta = {
+  title: '{{title}}',
+  author: '{{author}}',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  slug: '{{kebabCase title}}',
+  date: '05 October 2022 01:01 UTC',
+  main_image_src: '/images/{{kebabCase title}}/main.png',
+  published: false,
+};
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+---
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>
